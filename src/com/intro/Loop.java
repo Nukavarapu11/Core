@@ -1,9 +1,8 @@
 package com.intro;
 
-import sun.security.jgss.GSSCaller;
-
 import java.util.*;
 import java.util.Arrays;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class Loop {
 
@@ -26,9 +25,13 @@ public class Loop {
         //fibonacciNumbers();
         //armStrong();
         //series();
-        //algo();
         //algo1();
-        algo();
+        //algo();
+        //randomNumber();
+        //rectangle();
+        //rightAngledTriangle();
+        //reverseRightAngled();
+        halfPyramid();
 
     }
 
@@ -420,13 +423,88 @@ public class Loop {
         double sum = 0;
         int sign = 1;
 
-        for(int i = 1; i <= number; i++)
-        {
+        for (int i = 1; i <= number; i++) {
             sum += (1.0 * sign) / i;
             sign *= -1;
         }
 
         System.out.println("log2: " + sum);
+    }
+
+    public static void randomNumber() {
+
+        Scanner sc = new Scanner(System.in);
+
+        int i = 0;
+        int j = 0;
+
+        do {
+            i = ThreadLocalRandom.current().nextInt();
+
+            System.out.println("Enter a number");
+            j = sc.nextInt();
+
+            if (j > i) {
+                System.out.println("Higher than generated, try again");
+
+            } else if (j < i) {
+                System.out.println("Lower than generated, try again");
+
+            } else if (i == j) {
+                System.out.println("You're right!");
+
+            }
+
+        } while (i != j);
+
+    }
+
+    public static void rectangle() {
+
+        for (int i = 0; i < 4; i++) {
+
+            for (int j = 0; j < 7; j++) {
+                System.out.print("* ");
+            }
+            System.out.println("\n");
+        }
+
+    }
+
+    public static void rightAngledTriangle() {
+
+        for(int i=0; i<5; i++) {
+            for(int j=0; j<=i; j++) {
+                System.out.print("*");
+            }
+            System.out.println("\n");
+        }
+
+    }
+
+    public static void reverseRightAngled() {
+
+        for(int i=0; i<5; i++) {
+            for(int j=5; j>i; j--) {
+                System.out.print("*");
+            }
+            System.out.println("\n");
+        }
+
+    }
+
+    public static void halfPyramid() {
+
+        for(int i=0; i<5; i++) {
+            for(int j=5; j>i; j--) {
+                System.out.print(" ");
+            }
+            for(int k=0; k<i+1; k++) {
+                System.out.print("*");
+            }
+            System.out.println("\n");
+        }
+
     }
 
 }
