@@ -4,6 +4,11 @@ import java.util.*;
 import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;
 
+import sun.security.jgss.GSSCaller;
+
+import java.util.*;
+import java.util.Arrays;
+
 public class Loop {
 
     public static void main(String[] args) {
@@ -31,6 +36,9 @@ public class Loop {
         //rectangle();
         //rightAngledTriangle();
         //reverseRightAngled();
+        //algo();
+        //algo1();
+        //algo();
         halfPyramid();
 
     }
@@ -424,11 +432,13 @@ public class Loop {
         int sign = 1;
 
         for (int i = 1; i <= number; i++) {
+
             sum += (1.0 * sign) / i;
             sign *= -1;
         }
 
         System.out.println("log2: " + sum);
+
     }
 
     public static void randomNumber() {
@@ -473,8 +483,8 @@ public class Loop {
 
     public static void rightAngledTriangle() {
 
-        for(int i=0; i<5; i++) {
-            for(int j=0; j<=i; j++) {
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j <= i; j++) {
                 System.out.print("*");
             }
             System.out.println("\n");
@@ -484,8 +494,8 @@ public class Loop {
 
     public static void reverseRightAngled() {
 
-        for(int i=0; i<5; i++) {
-            for(int j=5; j>i; j--) {
+        for (int i = 0; i < 5; i++) {
+            for (int j = 5; j > i; j--) {
                 System.out.print("*");
             }
             System.out.println("\n");
@@ -495,11 +505,11 @@ public class Loop {
 
     public static void halfPyramid() {
 
-        for(int i=0; i<5; i++) {
-            for(int j=5; j>i; j--) {
+        for (int i = 0; i < 5; i++) {
+            for (int j = 5; j > i; j--) {
                 System.out.print(" ");
             }
-            for(int k=0; k<i+1; k++) {
+            for (int k = 0; k < i + 1; k++) {
                 System.out.print("*");
             }
             System.out.println("\n");
@@ -507,4 +517,8 @@ public class Loop {
 
     }
 
+
 }
+
+
+
