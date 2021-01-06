@@ -41,6 +41,10 @@ public class Loop {
         //algo();
         //halfPyramid();
         //pyramid();
+<<<<<<< HEAD
+        pyramidWNum();
+=======
+>>>>>>> 9d4fad6d295f978b341ae6d67c595a50a44418df
 
     }
 
@@ -531,6 +535,23 @@ public class Loop {
         }
 
     }
+<<<<<<< HEAD
+
+    public static void pyramidWNum() {
+
+        for (int i = 0; i < 5; i++) {
+            for (int j = 5; j > i; j--) {
+                System.out.print(" ");
+            }
+            for (int k = 0; k < (i + i) + 1; k++) {
+                System.out.print(i + 1);
+            }
+            System.out.println("\n");
+        }
+
+    }
+=======
+>>>>>>> 9d4fad6d295f978b341ae6d67c595a50a44418df
 
 }
 
