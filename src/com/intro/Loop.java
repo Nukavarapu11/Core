@@ -41,7 +41,10 @@ public class Loop {
         //algo();
         //halfPyramid();
         //pyramid();
+<<<<<<< HEAD
         pyramidWNum();
+=======
+>>>>>>> 9d4fad6d295f978b341ae6d67c595a50a44418df
 
     }
 
@@ -532,6 +535,7 @@ public class Loop {
         }
 
     }
+<<<<<<< HEAD
 
     public static void pyramidWNum() {
 
@@ -546,6 +550,8 @@ public class Loop {
         }
 
     }
+=======
+>>>>>>> 9d4fad6d295f978b341ae6d67c595a50a44418df
 
 }
 
