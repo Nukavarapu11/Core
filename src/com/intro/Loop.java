@@ -4,11 +4,6 @@ import java.util.*;
 import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;
 
-import sun.security.jgss.GSSCaller;
-
-import java.util.*;
-import java.util.Arrays;
-
 public class Loop {
 
     public static void main(String[] args) {
@@ -41,11 +36,8 @@ public class Loop {
         //algo();
         //halfPyramid();
         //pyramid();
-<<<<<<< HEAD
         pyramidWNum();
-=======
->>>>>>> 9d4fad6d295f978b341ae6d67c595a50a44418df
-
+      
     }
 
     public static String[] numbers() {
@@ -535,9 +527,8 @@ public class Loop {
         }
 
     }
-<<<<<<< HEAD
 
-    public static void pyramidWNum() {
+  public static void pyramidWNum() {
 
         for (int i = 0; i < 5; i++) {
             for (int j = 5; j > i; j--) {
@@ -550,8 +541,6 @@ public class Loop {
         }
 
     }
-=======
->>>>>>> 9d4fad6d295f978b341ae6d67c595a50a44418df
 
 }
 
