@@ -440,21 +440,6 @@ public class StringPractice {
         return result;
     }
 
-    private static String getString(String result, Map<String, Integer> map, int lex) {
-        for (Map.Entry<String, Integer> entrySet : map.entrySet()) {
-
-            if (entrySet.getValue() >= lex) {
-                if (!(lex == entrySet.getValue())) {
-                    result = entrySet.getKey();
-                } else {
-                    result = getAsciiValue(result) < getAsciiValue(entrySet.getKey()) ? result : entrySet.getKey();
-                }
-            }
-            lex = entrySet.getValue();
-        }
-        return result;
-    }
-
     private static void compareArrayIndices(String[] str, Map<String, Integer> map, int count) {
 
         for (int i = 0; i < str.length; i++) {
@@ -468,6 +453,21 @@ public class StringPractice {
             }
             count = 1;
         }
+    }
+
+    private static String getString(String result, Map<String, Integer> map, int lex) {
+        for (Map.Entry<String, Integer> entrySet : map.entrySet()) {
+
+            if (entrySet.getValue() >= lex) {
+                if (!(lex == entrySet.getValue())) {
+                    result = entrySet.getKey();
+                } else {
+                    result = getAsciiValue(result) < getAsciiValue(entrySet.getKey()) ? result : entrySet.getKey();
+                }
+            }
+            lex = entrySet.getValue();
+        }
+        return result;
     }
 
     private static int getAsciiValue(String temp) {

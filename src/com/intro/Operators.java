@@ -1,7 +1,5 @@
 package com.intro;
 
-import com.sun.tools.javac.util.StringUtils;
-
 public class Operators {
 
     static double a = 2;
