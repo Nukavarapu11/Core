@@ -37,11 +37,6 @@ public class Loop {
         //halfPyramid();
         //pyramid();
         pyramidWNum();
-<<<<<<< HEAD
-
-=======
-      
->>>>>>> ff417b814191a9a0204dde420ce134e8052dccfd
     }
 
     public static String[] numbers() {
@@ -532,11 +527,7 @@ public class Loop {
 
     }
 
-<<<<<<< HEAD
     public static void pyramidWNum() {
-=======
-  public static void pyramidWNum() {
->>>>>>> ff417b814191a9a0204dde420ce134e8052dccfd
 
         for (int i = 0; i < 5; i++) {
             for (int j = 5; j > i; j--) {
