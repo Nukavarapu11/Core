@@ -9,7 +9,7 @@ public class StringMethods {
         //toUppercase();
         //concat();
         //charAt();
-        //comparesTo();
+        comparesTo();
         //compareToIgnoreCase();
         //subString();
         //subString2();
